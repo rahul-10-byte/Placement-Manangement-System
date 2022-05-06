@@ -39,7 +39,7 @@ mysqli_select_db($con, 'admin');
                         <div class="card mb-4">
                             <div class="card-body">
                                 
-                                <?php $id = $_GET['id']; ?>
+                                
 
                                 DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
                                 <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
@@ -64,7 +64,9 @@ mysqli_select_db($con, 'admin');
                                     
                                    <?php
 
-                                     require 'includes/conn.php';
+                                    require 'includes/conn.php';
+
+                                    $id = $_GET['id'];
 
                                     if ($id == 'CS') {
                                         $param = "'%A0202%'";
@@ -133,7 +135,7 @@ mysqli_select_db($con, 'admin');
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div class="text-muted">Copyright &copy; Rahul Kalyankar 2022</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
