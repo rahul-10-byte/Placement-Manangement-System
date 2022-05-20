@@ -65,15 +65,14 @@ if(isset($_REQUEST['email'])&&isset($_REQUEST['pass'])){
                                         <form method="post" action="login.php">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" type="email" name="email" value="" id="input-email" placeholder="Enter Your Email ID" required>
-                                                <label for="inputEmail">Email address</label>
+                                                <label for="inputEmail"><i class="fa-solid fa-envelope"></i> Email address</label>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" type="password" name="pass" value="" id="input-pass" placeholder="Enter Your Password" required>
-                                                <label for="inputPassword">Password</label>
+                                                <label for="inputPassword"><i class="fa fa-key fa-fw"></i> Password</label>
                                             </div>
                                             
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.php">Forgot Password?</a>
                                                 <button class="btn btn-success d-block m-auto" type="submit"> Submit </button>
                                             </div>
                                         </form>
